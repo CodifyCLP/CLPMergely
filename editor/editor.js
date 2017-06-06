@@ -97,6 +97,8 @@ $(document).ready(function() {
 		height: 'auto',
 		cmsettings: {
 			lineNumbers: true,
+			lineWrapping: true,
+			ignorews: true,
 			readOnly: isSample
 		},
 		lhs: function(setValue) {
@@ -152,7 +154,7 @@ $(document).ready(function() {
 	// dg: deleted background
 	var color_defaults = {
 		cb: 'cccccc', cg: 'fafafa',
-		ab: 'a3d1ff', ag: 'ddeeff',
+		ab: '#98FF98', ag: '#98FF98',
 		db: 'ff7f7f', dg: 'ffe9e9'
 	};
 	applyParameterCss(false);
@@ -226,7 +228,7 @@ $(document).ready(function() {
 			set: function(value) {
 				var ws = !ed.mergely('options').ignorews;
 				ed.mergely('options', {ignorews: ws});
-				var params = updateQueryStringParam('ws', ws ? 1 : 0, 0);
+				var params = updateQueryStringParam('ws', ws ? 1 : 0, 1);
 				updateHistory(params);
 			}
 		},
@@ -280,7 +282,7 @@ $(document).ready(function() {
 			set: function(value) {
 				var wl = !ed.mergely('options').wrap_lines;
 				ed.mergely('options', {wrap_lines: wl});
-				var params = updateQueryStringParam('wl', wl ? 1 : 0, 0);
+				var params = updateQueryStringParam('wl', wl ? 1 : 0, 1);
 				updateHistory(params);
 			}
 		},

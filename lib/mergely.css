@@ -10,15 +10,15 @@
 
 /* style configuration */
 .mergely-column { border: 1px solid #ccc; }
-.mergely-active { border: 1px solid #a3d1ff; }
+.mergely-active { border: 1px solid #98FF98; }
 
 .mergely.a,.mergely.d,.mergely.c { color: #000; }
 
-.mergely.a.rhs.start { border-top: 1px solid #a3d1ff; }
+.mergely.a.rhs.start { border-top: 1px solid #98FF98; }
 .mergely.a.lhs.start.end,
-.mergely.a.rhs.end { border-bottom: 1px solid #a3d1ff; }
-.mergely.a.rhs { background-color: #ddeeff; }
-.mergely.a.lhs.start.end.first { border-bottom: 0; border-top: 1px solid #a3d1ff; }
+.mergely.a.rhs.end { border-bottom: 1px solid #98FF98; }
+.mergely.a.rhs { background-color: #98FF98; }
+.mergely.a.lhs.start.end.first { border-bottom: 0; border-top: 1px solid #98FF98; }
 
 .mergely.d.lhs { background-color: #ffe9e9; }
 .mergely.d.lhs.end,
@@ -33,7 +33,7 @@
 .mergely.c.lhs.end,
 .mergely.c.rhs.end { border-bottom: 1px solid #a3a3a3; }
 
-.mergely.ch.a.rhs { background-color: #ddeeff; }
+.mergely.ch.a.rhs { background-color: #98FF98; }
 .mergely.ch.d.lhs { background-color: #ffe9e9; text-decoration: line-through; color: red !important; }
 
 .mergely.current.start { border-top: 1px solid #000 !important; }
