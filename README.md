@@ -1,4 +1,4 @@
-# Mergely
+# Codify Mergely
 **An online diff/merge application**
 
 Mergely is an online diff/merge editor and Javascript library that highlights changes in similar texts.
